@@ -27,7 +27,7 @@ module.exports = (sequelize, DataTypes) => {
     {}
   );
   storyPage.associate = function (models) {
-    storyPage.belongsTo(models.homePage);
+    storyPage.belongsTo(models.homePage, { foreignKey: "homepageId" });
   };
   return storyPage;
 };

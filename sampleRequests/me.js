@@ -8,8 +8,9 @@ async function meExample() {
     // if you havent follow the setup steps from the readme first
     const responseLogin = await axios.post(`http://localhost:${PORT}/login`, {
       email: "test@test.com",
-      password: "test1234"
+      password: "test1234",
     });
+
     console.log("RESPONSE FROM SERVER", responseLogin.data);
 
     const token = responseLogin.data.token;
@@ -18,8 +19,8 @@ async function meExample() {
     // the email & name of this user
     const responseMe = await axios.get(`http://localhost:${PORT}/me`, {
       headers: {
-        Authorization: `Bearer ${token}`
-      }
+        Authorization: `Bearer ${token}`,
+      },
     });
 
     console.log(responseMe);

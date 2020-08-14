@@ -118,16 +118,23 @@ const authMiddleWare = require("./auth/middleware");
  */
 
 // GET endpoint for testing purposes, can be removed
-app.get("/", (req, res) => {
-  res.send("Hi from express");
-});
+//Nazneen - start
+// app.get("/", (req, res) => {
+//   res.send("Hi from express");
+// });
+const homepageRouter = require("./routers/homepage");
+const storypageRouter = require("./routers/storypage");
+app.use("/homepages", homepageRouter);
 
+app.use("/editpages", storypageRouter);
+app.use("/poststory", storypageRouter);
+//Nazneen - end
 // POST endpoint for testing purposes, can be removed
 app.post("/echo", (req, res) => {
   res.json({
     youPosted: {
-      ...req.body
-    }
+      ...req.body,
+    },
   });
 });
 
@@ -140,11 +147,11 @@ app.post("/authorized_post_request", authMiddleWare, (req, res) => {
 
   res.json({
     youPosted: {
-      ...req.body
+      ...req.body,
     },
     userFoundWithToken: {
-      ...user.dataValues
-    }
+      ...user.dataValues,
+    },
   });
 });
 

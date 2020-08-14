@@ -20,7 +20,7 @@ module.exports = {
           name: "How I became a Programmer?",
           content: `Well I'm, made an effort to develop applications on your own as they will help me learn a lot more and gain the experience and skills that can help me to become a competent programmer`,
           imageUrl:
-            "https://insights.dice.com/wp-content/uploads/2018/08/shutterstock_1060094186.jpg",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRHYnEvX5U8x0Bzi1rAO1xTmpP-n-8s7qpr7BG2rQYZU-mtR4Cf&usqp=CAU",
           createdAt: new Date(),
           updatedAt: new Date(),
           homepageId: 2,
@@ -56,7 +56,7 @@ module.exports = {
           In Front-End it’s very different. You need to care about the User-Interface and how your users interact with your app then measure User-Experience quantitatively. There are times you need to design the User-Experience yourself and improve the flow of the app that you’re making.
           What I like about Front-End development is you directly tackle customer needs and care about User Experience they’re experiencing. So I would say the approach in Front-End is quite different because it’s customer-centric and it’s all about how you would make the customer comfortable in using the app that you’re working on than say, tackling data structures.`,
           imageUrl:
-            "https://insights.dice.com/wp-content/uploads/2018/08/shutterstock_1060094186.jpg",
+            "https://i.pinimg.com/originals/1d/b4/f1/1db4f10a61e3a0d27f0b064b672d546a.jpg",
           createdAt: new Date(),
           updatedAt: new Date(),
           homepageId: 2,

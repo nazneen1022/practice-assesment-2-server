@@ -29,7 +29,7 @@ module.exports = (sequelize, DataTypes) => {
   );
   homePage.associate = function (models) {
     homePage.belongsTo(models.user);
-    homePage.hasMany(models.storyPage);
+    homePage.hasMany(models.storyPage, { foreignKey: "homepageId" });
   };
   return homePage;
 };
